@@ -1,0 +1,211 @@
+/* */
+
+* {
+    /*estilos globais */
+    margin: 0;
+    /* margem*/
+    padding: 0;
+    /*define a distância interna entre um elemento e sua borda */
+    box-sizing: border-box;
+    /*tamanho da letra*/
+    font-family: 'Oswald', sans-serif;
+    /*fonte que vamos usar*/
+    font-weight: 400;
+    /*largura da letra*/
+    color: #5d5d7d;
+    /*cor das letras */
+    
+}
+
+.wrapper {
+    /* essa é a nossa div */
+    height: 100vh;
+    /*ocupa toda a altura da tela */
+    width: 100vh;
+    /*ocupa toda a largura da tela */
+}
+
+.container-left {
+    display: inline-block;
+    /*as informaçãoes ficam em linha, lado a lado  */
+    width: 99%;
+    /*aqui era para ser 60% */
+    /*vai cupar 60% da tela (largura)  */
+    padding-left: 25px;
+    /* define o espaço de preenchimento dbrigatorio do lado esquerdo do elemento */
+    margin-top: 30%;
+    /* margem superior */
+}
+
+
+.container-right {
+
+    display: inline-block;
+    /* deixa as informações em linha */
+    background-color: rgba(93, 93, 125, 0.16);
+    /*o quarto parametro  deixa a cor opaca  */
+    width: 40%;
+    /*ocupa 40% da largura da tela  */
+    height: 100%;
+    /*ocupa toda a altura da tela */
+
+    position: absolute;
+    /* se a tela mexer ele vai junto - o elemento ficará em uma posição fixa*/
+
+}
+
+
+img {
+    position: relative;
+    /*determina que o elemento será posicionado de acordo com o fluxo natural da pagina  */
+    /* podemos deslocar o elemento para cima, para baixo, para direita ou para a esquerda usando TOP, BOTTOM, RIGHT e LEFT */
+    top: 13%;
+    right: 119px;
+    padding: 10;
+    display: block;
+
+}
+
+
+h1 {
+    font-size: 56px;
+    /*tamanho da letra */
+    line-height: 80px;
+    /*define a altura que  o texto ocupa */
+    width: 360px;
+
+
+}
+
+p {
+    font-size: 28px;
+    /*tamanho da letra */
+    line-height: 48px;
+    /*altura que o texto ocupa  */
+    opacity: 0.6;
+    margin: 20px 0;
+    width: 540px;
+
+}
+
+button {
+    width: 269px;
+    /* largura*/
+    height: 62px;
+    /* altura */
+    background: #9499ea;
+    /*cor de fundo */
+    box-shadow: 0px 10px 24 px rgba(148, 153, 234, 0.09799591);
+    border: none;
+    /*sem borda */
+    border-radius: 30px;
+    /* cantos arredondados*/
+    font-size: 24px;
+    /* tamanho da letra*/
+    line-height: 36px;
+    /* altura em que o texto vai ocupar */
+    text-align: center;
+    /*alinha o texto ao centro  */
+    color: #ffffff;
+    /* cor do texto */
+    cursor: pointer;
+    /*Cursor de mão */
+    margin: 20px;
+
+
+}
+
+button:hover {
+    opacity: 0.8;
+    /* quando passamos o mouse sobre o botão ele fica com a cor 80% opaca*/
+
+}
+
+button:active {
+    opacity: 0.5;
+    /*quando clicar no botão ele vai ficar 50% mais claro + opaco  */
+}
+
+
+a {
+    font-size: 28px;
+    /* tamanho da letra*/
+    line-height: 41px;
+    /*altura que o texto ocupa  */
+    color: #5d5d7d;
+    /*cor da letra */
+    margin-right: 41px;
+    /* margem direita */
+    cursor: pointer;
+    /*cursor de mao  */
+}
+
+a:nth-child(2) {
+    /*seleciona um elemento com base na sua posicao, nesse caso a 2ª  */
+    opacity: 0.4;
+    /* aplicara no segundo elemento uma opacidade de 40% */
+}
+
+header {
+    margin: 24px 0 0 57px;
+
+}
+
+@media screen and (max-width:1000px) {
+    .container-left {
+        width: 100%;
+        height: 50%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .container-right {
+        display: block;
+        height: auto;
+        width: 100%;
+        position: static;
+    }
+
+    img {
+        position: static;
+        width: 90%;
+        /* determina que o maximo que a imagem vai ter de largura é 90%*/
+    }
+
+    header {
+        display: none;
+    }
+
+    h1 {
+        font-size: 36px;
+        line-height: 52px;
+        width: auto;
+        margin: 58px 50px 0 50px;
+        text-align: center;
+    }
+
+    p {
+        margin: 15px 40px;
+        width: auto;
+        text-align: center;
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    button {
+        margin: 0 auto;
+        /* margem quando usamos dois valores o 1º aplica em cima e em baixo e o 2º dos lados */
+        /* dessa forma conseguimos centralizar o botao porque ele esta como autoajuste dos lados*/
+        display: block;
+        /* */
+    }
+
+
+}
+
+@media screen and (max-width:330px) {
+    .container-left {
+        height: 70%;
+    }
+
+}
