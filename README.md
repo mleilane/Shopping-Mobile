@@ -1,4 +1,4 @@
-<h1> Shopping MObile  </h1>
+<h1> Shopping Mobile  </h1>
 <img src= "https://github.com/mleilane/Shopping-Mobile/blob/main/assets/IMG.png?raw=true"/>
  
 <h3> Esse projeto foi desenvolvido  no <a href="https://rodolfomori.com.br/devclub" > Dev Club</a>, com o objetivo de praticar minhas habilidades em HTML e CSS para estruturar o conteúdo e estilizá-lo, e aplica responsividade para se adaptar a diferentes tamanhos de tela. Para técnica de responsividade usamos Media queries, que permitem que você altere o estilo do seu código com base em certas condições.
